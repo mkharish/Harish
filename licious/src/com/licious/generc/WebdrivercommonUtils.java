@@ -15,14 +15,14 @@ public class WebdrivercommonUtils {
 	}
 	
 	public void waitForElemnet(WebElement elemnet) {
-		WebDriverWait wait = new WebDriverWait(BaseClass.driver, 20);
+		WebDriverWait wait = new WebDriverWait(BaseClass.driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(elemnet));
 		
 	}
 	
 	public void waitForElemnetToVisible(WebElement elemnet) {
 		int count=0;
-		while(count<20) {
+		while(count<10) {
 			try {
 			elemnet.isEnabled();
 			break;

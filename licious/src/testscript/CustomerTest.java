@@ -11,20 +11,25 @@ import org.testng.annotations.Test;
 import com.licious.generc.BaseClass;
 import com.licious.generc.FileDataUtiles;
 import com.licious.generc.WebdrivercommonUtils;
+import com.licious.objectrepo.Login;
 import com.licious.objectrepo.chicken;
 import com.thoughtworks.selenium.webdriven.commands.Click;
+import com.thoughtworks.selenium.webdriven.commands.WaitForPageToLoad;
 
 
 public class CustomerTest extends BaseClass{
 	
 	FileDataUtiles file = new FileDataUtiles();
     WebdrivercommonUtils wLib = new WebdrivercommonUtils();
-    chicken chk = new chicken();
+    
 
 	@Test
 	public void createCustomerTest() throws Throwable {
 	//select chicken category
+		//wLib.waitForPageToLoad();
+		chicken chk = PageFactory.initElements(driver, chicken.class);
 		chk.Chicken();
+	
 		
 		
 	}

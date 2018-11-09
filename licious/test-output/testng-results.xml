@@ -2,25 +2,55 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="125899" started-at="2018-07-13T06:39:18Z" finished-at="2018-07-13T06:41:24Z">
+  <suite name="Default suite" duration-ms="18523" started-at="2018-10-04T12:12:11Z" finished-at="2018-10-04T12:12:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="125899" started-at="2018-07-13T06:39:18Z" finished-at="2018-07-13T06:41:24Z">
+    <test name="Default test" duration-ms="18523" started-at="2018-10-04T12:12:11Z" finished-at="2018-10-04T12:12:29Z">
       <class name="testscript.CustomerTest">
-        <test-method status="PASS" signature="configBC()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="configBC" is-config="true" duration-ms="4335" started-at="2018-07-13T06:39:18Z" finished-at="2018-07-13T06:39:23Z">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="configBC" is-config="true" duration-ms="5185" started-at="2018-10-04T12:12:11Z" finished-at="2018-10-04T12:12:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBm()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="configBm" is-config="true" duration-ms="121538" started-at="2018-07-13T06:39:23Z" finished-at="2018-07-13T06:41:24Z">
+        <test-method status="PASS" signature="configBm()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="configBm" is-config="true" duration-ms="12898" started-at="2018-10-04T12:12:16Z" finished-at="2018-10-04T12:12:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBm -->
-        <test-method status="FAIL" signature="createCustomerTest()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="createCustomerTest" duration-ms="6" started-at="2018-07-13T06:41:24Z" finished-at="2018-07-13T06:41:24Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="createCustomerTest()[pri:0, instance:testscript.CustomerTest@4667ae56]" name="createCustomerTest" duration-ms="397" started-at="2018-10-04T12:12:29Z" finished-at="2018-10-04T12:12:29Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (285.5, 113.5). Other element would receive the click: <div class="loc-screen show"></div>
+Command duration or timeout: 125 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-TAH49DT', ip: '192.168.0.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=false, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8b193170-f473-4d66-b0a4-6d727a777a53]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.licious.objectrepo.chicken.Chicken(chicken.java:14)
-at testscript.CustomerTest.createCustomerTest(CustomerTest.java:27)
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (285.5, 113.5). Other element would receive the click: <div class="loc-screen show"></div>
+Command duration or timeout: 125 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'DESKTOP-TAH49DT', ip: '192.168.0.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=38.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=false, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8b193170-f473-4d66-b0a4-6d727a777a53
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy7.click(Unknown Source)
+at com.licious.objectrepo.chicken.Chicken(chicken.java:19)
+at testscript.CustomerTest.createCustomerTest(CustomerTest.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -48,7 +78,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCustomerTest -->

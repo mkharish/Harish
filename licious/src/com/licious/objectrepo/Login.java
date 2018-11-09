@@ -3,7 +3,11 @@ package com.licious.objectrepo;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.licious.generc.WebdrivercommonUtils;
+
 public class Login {
+	
+	WebdrivercommonUtils wLib = new WebdrivercommonUtils();
 	//Webelemnets locator    // initialization  
 	@FindBy(xpath="//a[@class='login-user']")
      private WebElement login; 
@@ -41,6 +45,7 @@ public class Login {
 		clklog.click();
 	}
 	public void login(String username, String password) {
+		wLib.waitForPageToLoad();
 		login.click();
 		phonenumber.sendKeys(username);
 		proceed.click();
